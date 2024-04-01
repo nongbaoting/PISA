@@ -1,0 +1,3 @@
+numpy
+prody==2.4.1
+fire
