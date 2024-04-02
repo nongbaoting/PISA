@@ -31,7 +31,7 @@ PISA is an interactive web server that comprehensively annotates protein structu
 2. change `main.js` according to your server **IP**
     `vim fontEnd/src/main.js`, change the line below
     ```
-    const apiUrl = 'http://IP'
+    const apiUrl = 'http://IP:9006'
     ```
 
 4. Pull Docker images
