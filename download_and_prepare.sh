@@ -56,25 +56,25 @@ docker run -it  \
     -v `pwd`:/apps \
     -p 9008:9006 \
     -p 9116:9112 \
-    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/ /apps/data/PDB/foldseekDB/AFDB/foldseek_PDB_AFDB --threads 12"
+    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/AFDB /apps/data/PDB/foldseekDB/AFDB/foldseek_PDB_AFDB --threads 12"
 docker run -it  \
     --add-host dockerhost:${IP}  \
     --gpus all \
     -v `pwd`:/apps \
     -p 9008:9006 \
     -p 9116:9112 \
-    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/ /apps/data/PDB/foldseekDB/ECOD/foldseek_ECOD_F70 --threads 12"
+    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/ECOD /apps/data/PDB/foldseekDB/ECOD/foldseek_ECOD_F70 --threads 12"
 docker run -it  \
     --add-host dockerhost:${IP}  \
     --gpus all \
     -v `pwd`:/apps \
     -p 9008:9006 \
     -p 9116:9112 \
-    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/ /apps/data/PDB/foldseekDB/pdbDB/foldseek_PDB --threads 12"
+    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/pdbDB /apps/data/PDB/foldseekDB/pdbDB/foldseek_PDB --threads 12"
 docker run -it  \
     --add-host dockerhost:${IP}  \
     --gpus all \
     -v `pwd`:/apps \
     -p 9008:9006 \
     -p 9116:9112 \
-    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/ /apps/data/PDB/foldseekDB/SCOP2/foldseek_scopDomain --threads 12"
+    nongbaoting/pisa:latest /bin/bash -c "foldseek createdb  /apps/data/PDB/SCOP /apps/data/PDB/foldseekDB/SCOP2/foldseek_scopDomain --threads 12"

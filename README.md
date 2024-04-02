@@ -16,10 +16,10 @@ PISA is an interactive web server that comprehensively annotates protein structu
 
 1. Pull from Github
     ```
-    git pull https://github.com/nongbaoting/PISA.git
+    git clone https://github.com/nongbaoting/PISA.git
     cd PISA
-    git pull https://github.com/nongbaoting/django_prot.git
-    git pull https://github.com/nongbaoting/fontEnd.git
+    git clone https://github.com/nongbaoting/django_prot.git
+    git clone https://github.com/nongbaoting/fontEnd.git
     
     ```
 
@@ -50,15 +50,10 @@ PISA is an interactive web server that comprehensively annotates protein structu
 
 5. install npm packages
     ```
-    cd fontEnd
-    docker run -it  \
-        --add-host dockerhost:${IP}  \
-        --gpus all \
+    docker run -it  --rm \
         -v `pwd`:/apps \
-        -p 9008:9006 \
-        -p 9116:9112 \
         nongbaoting/pisa:latest /bin/bash -c "cd /apps/fontEnd  && npm install"
-    cd ..
+    
     ```
 
 5. Start Web server
