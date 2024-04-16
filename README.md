@@ -7,6 +7,7 @@ PISA is an interactive web server that comprehensively annotates protein structu
 ## Prerequisites
 
 * [Docker](https://www.docker.com/) and docker permission
+* [nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 * python3 and pip
 
 
